@@ -1,0 +1,27 @@
+{
+  "name": "wallet",
+  "version": "1.2.5",
+  "description": "",
+  "repository": "git@github.com:arol-dev/assessment-6-wallet.git",
+  "author": "Arol <arol.vinolas@gmail.com>",
+  "license": "See License in LICENSE.md",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-remove-code": "^3.0.4",
+    "prettier": "^2.6.2",
+    "prettier-eslint": "^15.0.0",
+    "turbo": "^1.8.5"
+  },
+  "scripts": {
+    "dev": "turbo run dev --parallel"
+  },
+  "dependencies": {
+    "del": "^7.0.0"
+  },
+  "type": "module",
+  "main": "index.js"
+}

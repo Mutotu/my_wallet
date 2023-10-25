@@ -1,0 +1,201 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  justify-items: center;
+
+  justify-content: space-between;
+  padding: 0 1em;
+  height: 64px;
+  border-radius: 6px;
+  border: 1px solid;
+  margin-bottom: 10px;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.sectionHeading {
+  font-family: 'SF Pro Text';
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 1.6px;
+}
+
+.dinero {
+  font-family: 'SF Pro Display';
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 0.384px;
+}
+
+form {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+input {
+  height: 25px;
+  width: 150px;
+  border-radius: 6px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 18px;
+  height: 30px;
+  width: 120px;
+  background-color: #036fe3;
+  color: white;
+  border-radius: 6px;
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+form,
+.sub {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+label {
+  margin-left: -51px;
+}
+
+.sub-section {
+  display: flex;
+  gap: 19px;
+}
+
+.time {
+  font-family: SF Pro Text;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 1.600000023841858px;
+  text-align: left;
+  color: #90969b;
+}
+
+.type {
+  font-size: 12px;
+  height: 18px;
+  padding: 5px;
+  border-radius: 6px;
+}
+.transaction {
+  margin-left: -420px;
+}
+
+
+.transaction-container {
+  height: 400px; 
+  overflow-y: auto; 
+  border: 1px solid #ccc; 
+  padding: 10px;
+}
+
+
+.transfer-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.send-money {
+  text-align: center;
+}
+
+.amount-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.send-button {
+  display: block;
+  margin: 10px auto;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.select-receiver {
+  margin-top: 20px;
+}
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.select-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
