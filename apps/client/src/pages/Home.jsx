@@ -90,6 +90,7 @@ const Home = () => {
     navigate("/signin")
   }
   useEffect(() => {
+    if (!id) navigate("/signin")
     if (username, accountNumber) {
       fetch(`${baseURL}/auth`, {
         method: 'POST',

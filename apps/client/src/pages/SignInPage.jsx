@@ -25,25 +25,22 @@ const SignInPage = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-
   const signupValidationSchema = Yup.object({
     username: Yup.string().required('Username is required'),
     accountNumber: Yup.string().required('AccountNumber is required'),
   });
 
-  const handleSignupSubmit = (values) => {
+  const handleSigninSubmit = (values) => {
     fetch(`${baseURL}/auth`, {
       method: 'POST',
       headers: myHeaders,
       body: JSON.stringify(values),
       redirect: 'follow',
     }).then((res) => {
-      console.log(values)
       if (res.status === 201) {
-        console.log(res.json)
         return res.json()
       }
-      return "Username doesn't exist"
+      return "Username exists"
 
     })
       .then((res) => {
@@ -62,8 +59,9 @@ const SignInPage = () => {
         }}
         validationSchema={signupValidationSchema}
         fields={signinFields}
-        onSubmit={handleSignupSubmit}
+        onSubmit={handleSigninSubmit}
       />
+      <button onClick={() => navigate("/signup")}>Sign up</button>
     </div>)
 }
 

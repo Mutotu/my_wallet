@@ -58,6 +58,7 @@ const SignUpPage = () => {
         fields={signupFields}
         onSubmit={handleSignupSubmit}
       />
+      <button onClick={() => navigate("/signin")}>Have an account</button>
     </div>
   );
 
