@@ -66,7 +66,6 @@ const TransferPage = () => {
         }
       })
 
-
   }
   useEffect(() => {
     fetch(`${baseURL}/users`, {
