@@ -26,7 +26,7 @@ const TransferPage = () => {
   const { id } = selectedData
 
 
-  const handleClick = (id, username, fullName, accountNumber) => {
+  const handleClick = (id, username = undefined, fullName, accountNumber) => {
     setState((prev) => ({
       ...prev,
       isSelected: true,
@@ -78,7 +78,6 @@ const TransferPage = () => {
         return res.json()
       }
     }).then(res => {
-      console.log(res)
       setUsers(res)
     })
   }, [])

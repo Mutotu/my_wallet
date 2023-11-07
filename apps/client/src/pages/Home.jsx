@@ -112,10 +112,10 @@ const Home = () => {
   }, [state.hasChanged])
 
   return <div>
-    <button onClick={handleClick}>Log out</button>
+    <button style={{ position: "absolute", right: "10px" }} onClick={handleClick}>Log out</button>
     <div className="header">
-      <h5 className="sectionHeading">CURRENT BALANCE</h5>
       <h5>Welcome {fullName.split(' ')}</h5>
+      <h5 className="sectionHeading">CURRENT BALANCE</h5>
       <p className="dinero">{`$${parseFloat(balance)} `}</p>
     </div>
     <SelectForm state={state} handleSubmit={handleSubmit} handleChange={handleChange} handleAmountChange={handleAmountChange} />
@@ -123,7 +123,7 @@ const Home = () => {
       <div className="sub">
         <div>
           <button onClick={() => navigate("/transfer")}>Send money</button>
-          <button>Receive money</button>
+          {/* <button>Receive money</button> */}
         </div>
         <h3 className="transaction">Transactions</h3>
         <div>{state.errorMessage && <p>{state.errorMessage}</p>}</div>
